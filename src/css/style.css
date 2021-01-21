@@ -1,0 +1,175 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-size: 1.4rem;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  background: rgb(243, 243, 243);
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.instagram__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  width: 60%;
+  height: 100vh;
+}
+
+.instagram__phone {
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100vh;
+  background-image: url(/src/img/43cc71bb1b43.png);
+  background-repeat: no-repeat;
+}
+
+.instagram__phone__inner {
+  position: relative;
+}
+
+.instagram__phone__inner img {
+  position: absolute;
+  top: 94px;
+  right: 180px;
+  width: 250px;
+  height: 19.5rem;
+}
+
+.instagram__continue {
+  display: flex;
+  align-items: center; /* horizontal */
+  justify-content: space-around; /* vertical */
+  flex-direction: column; /* este comando inverteu o eixo de alinhamento dos itens */
+  width: 50%;
+  height: 34rem;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 1.3rem 0;
+  border: 1px solid lightgray;
+}
+
+/*seleciona o primeiro filho desse container*/
+.group:nth-child(1) {
+  min-height: 19rem;
+}
+
+.instagram__logo {
+  height: 3rem;
+}
+
+.profile__photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile__photo img {
+  height: 6rem;
+}
+
+.instagram__login {
+  background-color: #0095f6;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.instagram__logout {
+  color: #0095f6;
+  margin-top: 1rem;
+}
+
+.not__account {
+  color: rgb(160, 160, 160);
+}
+
+.link__blue {
+  color: #0095f6;
+}
+
+.get__the__app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 1.3rem 0;
+}
+
+.download {
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+
+.app__download {
+  height: 3rem;
+  width: 10rem;
+  background-size: cover;
+}
+
+.app__download:nth-child(1) {
+  background-image: url('./src/img/googleplay.png');
+}
+
+.app__download:nth-child(2) {
+  background-image: url('./src/img/appstore.png');
+}
+
+.app__download {
+  margin: 3rem;
+}
+
+/* media queries */
+
+@media (max-width: 1024px) {
+  .instagram__wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 650px) {
+  body {
+    background: #ffffff;
+  }
+
+  .group {
+    border: 1px solid #ffffff;
+  }
+
+  .instagram__wrapper {
+    width: 90%;
+  }
+
+  .instagram__phone {
+    display: none;
+  }
+
+  .instagram__continue {
+    width: 100%;
+  }
+}
